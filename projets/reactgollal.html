@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site Web Gollal — Vincent Lainé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/projet.css" />
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Vincent <span>Lainé</span></a>
+</nav>
+
+<!-- HERO -->
+<div class="projet-hero">
+  <div class="projet-hero-inner">
+    <a href="../index.html#projets" class="back-btn">Retour au portfolio</a>
+
+    <div class="projet-badges">
+      <span class="project-type type-pro">Stage 1ère année</span>
+      <span class="project-type type-pro" style="background:rgba(43,224,200,0.08);">React · TypeScript · Firebase</span>
+    </div>
+
+    <h1 class="projet-title">Site Web<br /><span class="accent">Gollal</span></h1>
+    <p class="projet-subtitle">
+      Développement from scratch de la landing page officielle de l'entreprise — responsive, multilingue et déployée sur Firebase.
+    </p>
+
+    <div class="projet-meta">
+      <div class="projet-meta-item">
+        <small>Période</small>
+        <span>Mai — Juillet 2025</span>
+      </div>
+      <div class="projet-meta-item">
+        <small>Entreprise</small>
+        <span>Gollal · Clichy-sous-Bois</span>
+      </div>
+      <div class="projet-meta-item">
+        <small>Type</small>
+        <span>Stage 1ère année BTS SIO</span>
+      </div>
+      <div class="projet-meta-item">
+        <small>Rôle</small>
+        <span>Développeur Web & React</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENU -->
+<div class="projet-content">
+
+  <!-- CONTEXTE -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">🏢 Contexte & entreprise</h2>
+    <div class="entreprise-card">
+      <div class="entreprise-icon">🌐</div>
+      <div class="entreprise-info">
+        <h3>Gollal — Clichy-sous-Bois (93)</h3>
+        <p>
+          Gollal est une entreprise basée à Clichy-sous-Bois. Dans le cadre de mon stage de première année
+          de BTS SIO, j'ai été chargé de développer <strong>from scratch le site web officiel</strong> de
+          l'entreprise. Le site est une landing page présentant l'activité de la société, conçue pour être
+          accessible à un public international avec un système de changement de langue intégré.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FONCTIONNALITÉS -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">⚙️ Fonctionnalités développées</h2>
+    <div class="fonctionnalites-grid">
+      <div class="fonctionnalite-card">
+        <h4>🌍 Internationalisation (i18n)</h4>
+        <p>Système de changement de langue via un useState React. Les traductions étaient d'abord stockées dans des fichiers JSON locaux, puis migrées vers Firebase Remote Config pour permettre des mises à jour sans redéploiement.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>📱 Responsive Design complet</h4>
+        <p>Menu burger pour mobile, ancrage interne fluide entre les sections, navigation optimisée pour tous les formats d'écran (mobile, tablette, desktop).</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>♿ Accessibilité</h4>
+        <p>Respect des bonnes pratiques d'accessibilité web : balises sémantiques, contrastes, attributs ARIA et navigation clavier.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>🎨 Charte graphique</h4>
+        <p>Intégration fidèle de la charte graphique de l'entreprise : couleurs, typographies, espacements et composants visuels cohérents.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>⚡ Firebase Remote Config</h4>
+        <p>Migration des traductions vers Firebase Remote Config pour permettre à l'équipe de modifier le contenu multilingue sans toucher au code source.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>🔄 Méthode Agile</h4>
+        <p>Travail en équipe avec méthode Scrum, suivi des tâches sur Jira, versionnement sur GitLab et participation aux réunions de sprint.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MON RÔLE -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">👨‍💻 Mon rôle dans le projet</h2>
+    <ul class="role-list">
+      <li>Développement complet du site from scratch avec React et TypeScript</li>
+      <li>Mise en place de l'internationalisation avec i18next et fichiers JSON de traduction</li>
+      <li>Migration des traductions vers Firebase Remote Config pour une gestion dynamique du contenu</li>
+      <li>Intégration du responsive design : menu burger, ancrage interne, adaptation mobile</li>
+      <li>Respect de la charte graphique fournie par l'équipe design</li>
+      <li>Application des bonnes pratiques d'accessibilité web</li>
+      <li>Configuration du projet avec Vite et gestion du déploiement sur Firebase Hosting</li>
+    </ul>
+  </div>
+
+  <!-- STACK -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">🛠️ Stack technique</h2>
+    <div class="stack-section">
+      <span class="stack-pill">React</span>
+      <span class="stack-pill">TypeScript</span>
+      <span class="stack-pill">Vite</span>
+      <span class="stack-pill">Firebase Hosting</span>
+      <span class="stack-pill">Firebase Remote Config</span>
+      <span class="stack-pill">i18next</span>
+      <span class="stack-pill">HTML/CSS</span>
+      <span class="stack-pill">GitLab</span>
+      <span class="stack-pill">Jira</span>
+      <span class="stack-pill">Scrum</span>
+      <span class="stack-pill">WebStorm</span>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">📸 Captures d'écran</h2>
+    <div class="screenshots-grid">
+      <div class="screenshot-placeholder">
+        <span>🖼️</span>
+        <p>Capture à venir</p>
+      </div>
+      <div class="screenshot-placeholder">
+        <span>🖼️</span>
+        <p>Capture à venir</p>
+      </div>
+      <div class="screenshot-placeholder">
+        <span>🖼️</span>
+        <p>Capture à venir</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2025 Vincent Lainé — Développeur Web & Logiciel</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

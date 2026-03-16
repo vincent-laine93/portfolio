@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GestTravaux Web — Vincent Lainé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/projet.css" />
+</head>
+<body>
+
+<nav>
+    <a href="../index.html" class="nav-logo">Vincent <span>Lainé</span></a>
+</nav>
+
+<!-- HERO -->
+<div class="projet-hero">
+    <div class="projet-hero-inner">
+        <a href="../index.html#projets" class="back-btn">Retour au portfolio</a>
+
+        <div class="projet-badges">
+            <span class="project-type type-school">Projet Scolaire</span>
+            <span class="project-type type-pro" style="background:rgba(43,224,200,0.08);">PHP · Symfony · Doctrine</span>
+        </div>
+
+        <h1 class="projet-title">GestTravaux<br /><span class="accent">Web</span></h1>
+        <p class="projet-subtitle">
+            Application web multi-rôles pour la gestion des chantiers immobiliers — interfaces dédiées à l'inspecteur terrain, à l'entrepreneur et au propriétaire.
+        </p>
+
+        <div class="projet-meta">
+            <div class="projet-meta-item">
+                <small>Période</small>
+                <span>Oct. 2025 — Mars 2026</span>
+            </div>
+            <div class="projet-meta-item">
+                <small>Contexte</small>
+                <span>BTS SIO SLAM — Lycée ORT Daniel Mayer</span>
+            </div>
+            <div class="projet-meta-item">
+                <small>Équipe</small>
+                <span>Projet d'équipe (3+ personnes)</span>
+            </div>
+            <div class="projet-meta-item">
+                <small>Rôle</small>
+                <span>Développeur Full Stack Web</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENU -->
+<div class="projet-content">
+
+    <!-- CONTEXTE -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">🏢 Contexte & entreprise</h2>
+        <div class="entreprise-card">
+            <div class="entreprise-icon">🏗️</div>
+            <div class="entreprise-info">
+                <h3>IMMOSYNC — Société de syndic immobilier</h3>
+                <p>
+                    IMMOSYNC est une société de syndic proposant des services de gérance de biens immobiliers.
+                    Le projet GestTravaux est composé de deux applications complémentaires partageant la même
+                    base de données MySQL. L'application web Symfony couvre les acteurs terrain : l'inspecteur
+                    qui réalise les évaluations sur site, l'entrepreneur qui consulte et soumet ses devis,
+                    et le propriétaire qui valide les chantiers le concernant.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ACTEURS -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">👥 Les acteurs de l'application</h2>
+        <div class="archi-grid">
+            <div class="archi-card">
+                <div class="archi-icon">🔍</div>
+                <h4>Inspecteur</h4>
+                <p>Interface mobile PWA pour les évaluations terrain, prise de photos, saisie DPE et diagnostics</p>
+            </div>
+            <div class="archi-card">
+                <div class="archi-icon">👷</div>
+                <h4>Entrepreneur</h4>
+                <p>Dashboard pour consulter les chantiers proposés, soumettre des devis PDF et suivre les statuts</p>
+            </div>
+            <div class="archi-card">
+                <div class="archi-icon">🏠</div>
+                <h4>Propriétaire</h4>
+                <p>Espace de consultation et de validation ponctuelle des chantiers concernant ses biens</p>
+            </div>
+            <div class="archi-card">
+                <div class="archi-icon">⚙️</div>
+                <h4>Administrateur</h4>
+                <p>Interface d'administration système et gestion des accès</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FONCTIONNALITÉS -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">⚙️ Fonctionnalités développées</h2>
+        <div class="fonctionnalites-grid">
+            <div class="fonctionnalite-card">
+                <h4>🔐 Authentification multi-rôles</h4>
+                <p>Système de connexion sécurisé avec rôles distincts (inspecteur, entrepreneur, propriétaire, admin) et redirection vers les espaces dédiés.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>📍 Interface inspecteur mobile (PWA)</h4>
+                <p>Interface responsive optimisée tablette/smartphone, intégration d'une carte pour localiser le bien, saisie d'observations, upload de photos et documents (DPE, diagnostics).</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>📊 Espace entrepreneur</h4>
+                <p>Dashboard personnalisé avec liste des demandes de chantiers, consultation du devis type, soumission de devis PDF via VichUploaderBundle et messagerie avec notifications email.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>✅ Validation propriétaire</h4>
+                <p>Espace dédié pour la consultation des chantiers et la validation des propositions avant engagement des travaux.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>📱 Suivi d'avancement terrain</h4>
+                <p>Mise à jour mobile de l'avancement par l'entrepreneur, upload de photos géolocalisées et validation inspecteur sur site.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>✍️ Réception des travaux</h4>
+                <p>Grilles de contrôle dynamiques, saisie de réserves avec photos, signature électronique sur tablette (Canvas HTML5) et génération automatique du PV en PDF.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MON RÔLE -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">👨‍💻 Mon rôle dans le projet</h2>
+        <ul class="role-list">
+            <li>Participation à la conception de la base de données MySQL partagée avec l'application Java</li>
+            <li>Configuration de Doctrine ORM avec entités mappées et migrations</li>
+            <li>Développement des controllers Symfony avec injection de dépendances</li>
+            <li>Création des formulaires Symfony avec validation et upload de fichiers</li>
+            <li>Mise en place de l'authentification multi-rôles et des espaces sécurisés</li>
+            <li>Développement des templates Twig responsives avec héritage de base</li>
+            <li>Travail en équipe avec méthode Scrum, sprints et versionnement Git</li>
+        </ul>
+    </div>
+
+    <!-- STACK -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">🛠️ Stack technique</h2>
+        <div class="stack-section">
+            <span class="stack-pill">PHP</span>
+            <span class="stack-pill">Symfony 7</span>
+            <span class="stack-pill">Doctrine ORM</span>
+            <span class="stack-pill">Twig</span>
+            <span class="stack-pill">MySQL</span>
+            <span class="stack-pill">HTML/CSS</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">VichUploaderBundle</span>
+            <span class="stack-pill">PHPUnit</span>
+            <span class="stack-pill">PWA</span>
+            <span class="stack-pill">Canvas HTML5</span>
+            <span class="stack-pill">Git</span>
+            <span class="stack-pill">PhpStorm</span>
+        </div>
+    </div>
+
+    <!-- SCREENSHOTS -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">📸 Captures d'écran</h2>
+        <div class="screenshots-grid">
+            <div class="screenshot-placeholder">
+                <span>🖼️</span>
+                <p>Capture à venir</p>
+            </div>
+            <div class="screenshot-placeholder">
+                <span>🖼️</span>
+                <p>Capture à venir</p>
+            </div>
+            <div class="screenshot-placeholder">
+                <span>🖼️</span>
+                <p>Capture à venir</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>© 2025 Vincent Lainé — Développeur Web & Logiciel</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

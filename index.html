@@ -1,40 +1,514 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vincent Lainé — Développeur Web & Logiciel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/index.css" />
 </head>
 <body>
-<header>
-    <h1>LAINE Vincent</h1>
-</header>
 
-<div class="container">
-    <h2>💼 Profil</h2>
-    <p>Passionné par la programmation et les nouvelles technologies, je suis étudiant en BTS SIO (SLAM).</p>
-
-    <h2>🔧 Compétences</h2>
-    <ul>
-        <li>Java (JavaFX), PHP (POO), SQL</li>
-        <li>Développement Web : HTML, CSS, JavaScript</li>
-        <li>Cybersécurité : Sécurisation des applications</li>
+<!-- ══════════════════════════════
+     NAVIGATION
+══════════════════════════════ -->
+<nav>
+    <a href="#accueil" class="nav-logo">Vincent <span>Lainé</span></a>
+    <ul class="nav-links">
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
+</nav>
 
-    <h2>🌟 Projets</h2>
-    <div class="project">
-        <h3>Gestion de films et acteurs</h3>
-        <p>Application JavaFX connectée à MySQL pour afficher et gérer des films et acteurs.</p>
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<section id="accueil">
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-inner">
+        <div class="hero-text">
+            <div class="hero-badge">
+                <span>🎓</span> BTS SIO SLAM — Alternance dès sept. 2026
+            </div>
+            <h1 class="hero-name">Vincent<br /><span class="accent">Lainé</span></h1>
+            <p class="hero-title">Développeur Web & Logiciel · Full Stack</p>
+            <p class="hero-desc">
+                Passionné par la conception logicielle, l'architecture applicative et le DevOps.
+                Je cherche une alternance pour approfondir ces spécialités à partir de septembre 2026.
+            </p>
+            <div class="hero-btns">
+                <a href="#projets" class="btn btn-primary">Voir mes projets →</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+                <a href="Documents/CV_Vincent_Laine-alternance.pdf" class="btn btn-outline" target="_blank">📄 CV</a>
+                <a href="Documents/Synthese_Epreuve_E5_2025.pdf" class="btn btn-outline" target="_blank">📊 Grille de compétences</a>
+            </div>
+        </div>
+        <div class="hero-photo-wrap">
+            <img src="images/photo.jpg" alt="Vincent Lainé" />
+        </div>
     </div>
-    <div class="project">
-        <h3>Site web dynamique en PHP POO</h3>
-        <p>Développement d'un site en PHP orienté objet avec gestion de base de données.</p>
-    </div>
+</section>
 
-    <h2>📡 Contact</h2>
-    <p>Email : vincent.laine@ortmontreuil.fr</p>
-    <p>GitHub : <a href="https://github.com/vincent-laine93" target="_blank">vincent-laine93</a></p>
-</div>
+<hr class="section-line" />
+
+<!-- ══════════════════════════════
+     À PROPOS
+══════════════════════════════ -->
+<section id="apropos">
+    <div class="section-inner fade-in">
+        <div class="section-label">Qui suis-je ?</div>
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-grid">
+            <div class="about-photo-wrap">
+                <img src="images/photo.jpg" alt="Vincent Lainé" />
+            </div>
+            <div class="about-text">
+                <p>
+                    Je suis <strong>Vincent Lainé</strong>, développeur web et logiciel actuellement en
+                    <strong>BTS SIO option SLAM</strong> au Lycée ORT Daniel Mayer à Montreuil.
+                    Après une première année en formation initiale pour consolider mes bases techniques,
+                    je souhaite poursuivre ma deuxième année en <strong>alternance</strong>.
+                </p>
+                <p>
+                    Mon objectif est de me spécialiser en <strong>conception logicielle, architecture
+                    applicative et DevOps</strong>. Je suis à l'aise aussi bien côté frontend
+                    (React, TypeScript) que backend (Java/Spring, PHP/Symfony, Python).
+                </p>
+                <p>
+                    Curieux et rigoureux, j'aime travailler en équipe selon des méthodes agiles.
+                    Mon parcours atypique — double licence maths/info à Sorbonne Paris Nord, puis BTS SIO —
+                    reflète ma volonté de construire des bases solides avant de me spécialiser.
+                </p>
+                <div class="about-tags">
+                    <span class="tag">📍 Montfermeil (93)</span>
+                    <span class="tag">📅 Rythme 1 sem / 1 sem</span>
+                    <span class="tag">🇫🇷 Français</span>
+                    <span class="tag">🎯 Alternance dès sept. 2025</span>
+                </div>
+                <div class="about-docs">
+                    <a href="Documents/CV_Vincent_Laine-alternance.pdf" class="btn btn-outline" target="_blank">📄 CV</a>
+                    <a href="Documents/Synthese_Epreuve_E5_2025.pdf" class="btn btn-outline" target="_blank">📊 Grille de compétences</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="section-line" />
+
+<!-- ══════════════════════════════
+     COMPÉTENCES
+══════════════════════════════ -->
+<section id="competences">
+    <div class="section-inner fade-in">
+        <div class="section-label">Savoir-faire</div>
+        <h2 class="section-title">Compétences</h2>
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-card-icon">🎨</div>
+                <h3>Frontend</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">HTML/CSS</span>
+                    <span class="skill-pill">JavaScript</span>
+                    <span class="skill-pill">TypeScript</span>
+                    <span class="skill-pill">React</span>
+                    <span class="skill-pill">JavaFX</span>
+                    <span class="skill-pill">i18next</span>
+                    <span class="skill-pill">Vite</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">⚙️</div>
+                <h3>Backend</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">Java</span>
+                    <span class="skill-pill">Spring Boot</span>
+                    <span class="skill-pill">PHP</span>
+                    <span class="skill-pill">Symfony</span>
+                    <span class="skill-pill">Python</span>
+                    <span class="skill-pill">C</span>
+                    <span class="skill-pill">KMP</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">🗄️</div>
+                <h3>Base de données</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">MySQL</span>
+                    <span class="skill-pill">SQL</span>
+                    <span class="skill-pill">Modélisation BDD</span>
+                    <span class="skill-pill">UML</span>
+                    <span class="skill-pill">MCD/MLD</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">🛠️</div>
+                <h3>Outils & DevOps</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">Docker</span>
+                    <span class="skill-pill">Git / GitHub</span>
+                    <span class="skill-pill">GitLab</span>
+                    <span class="skill-pill">Jira</span>
+                    <span class="skill-pill">Linux</span>
+                    <span class="skill-pill">Firebase</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">🏗️</div>
+                <h3>Conception</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">UML</span>
+                    <span class="skill-pill">POO</span>
+                    <span class="skill-pill">Architecture MVC</span>
+                    <span class="skill-pill">Design Patterns</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">🔄</div>
+                <h3>Méthodes</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">Scrum</span>
+                    <span class="skill-pill">Kanban</span>
+                    <span class="skill-pill">Agile</span>
+                    <span class="skill-pill">Sprints</span>
+                    <span class="skill-pill">Code Review</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">💻</div>
+                <h3>IDE</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">IntelliJ IDEA</span>
+                    <span class="skill-pill">PhpStorm</span>
+                    <span class="skill-pill">WebStorm</span>
+                    <span class="skill-pill">VS Code</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-icon">📱</div>
+                <h3>Mobile</h3>
+                <div class="skill-list">
+                    <span class="skill-pill">KMP (Kotlin Multiplatform)</span>
+                    <span class="skill-pill">Responsive Design</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<hr class="section-line" />
+
+<!-- ══════════════════════════════
+     PROJETS
+══════════════════════════════ -->
+<section id="projets">
+    <div class="section-inner fade-in">
+        <div class="section-label">Réalisations</div>
+        <h2 class="section-title">Projets</h2>
+
+        <div class="projects-tabs">
+            <button class="tab-btn active" onclick="showTab('pro')">Professionnels</button>
+            <button class="tab-btn" onclick="showTab('scolaire')">Scolaires</button>
+        </div>
+
+        <!-- Projets professionnels -->
+        <div id="tab-pro" class="tab-pane active">
+
+            <a href="projets/reactgollal.html" class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🌐</div>
+                    <span class="project-type type-pro">Stage 1ère année</span>
+                </div>
+                <div class="project-title">Site Web Officiel — Gollal</div>
+                <div class="project-date">Mai — Juillet 2025 · Clichy-sous-Bois</div>
+                <div class="project-desc">
+                    Développement from scratch du site web officiel de l'entreprise Gollal. Intégration du
+                    responsive design complet (menu burger, ancrage interne, navigation mobile), mise en place
+                    de l'internationalisation (i18n), respect de la charte graphique et des bonnes pratiques
+                    d'accessibilité.
+                </div>
+                <div class="project-stack">
+                    <span class="stack-pill">React</span>
+                    <span class="stack-pill">TypeScript</span>
+                    <span class="stack-pill">Vite</span>
+                    <span class="stack-pill">Firebase</span>
+                    <span class="stack-pill">Remote Config</span>
+                    <span class="stack-pill">i18next</span>
+                    <span class="stack-pill">GitLab</span>
+                    <span class="stack-pill">Scrum / Jira</span>
+                </div>
+            </a>
+
+            <a href="projets/kinlykmp.html" class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📱</div>
+                    <span class="project-type type-stage">Stage 2ème année</span>
+                </div>
+                <div class="project-title">Application Mobile — Stage 2ème année</div>
+                <div class="project-date">Janvier — Février 2026 · Clichy-sous-Bois</div>
+                <div class="project-desc">
+                    Développement d'une application mobile multiplateforme en Kotlin Multiplatform (KMP).
+                    Conception de la base de données, développement du backend et intégration de l'interface
+                    mobile native.
+                </div>
+                <div class="project-stack">
+                    <span class="stack-pill">KMP</span>
+                    <span class="stack-pill">Kotlin</span>
+                    <span class="stack-pill">Backend</span>
+                    <span class="stack-pill">Conception BDD</span>
+                    <span class="stack-pill">UML</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Projets scolaires -->
+        <div id="tab-scolaire" class="tab-pane">
+
+            <a href="projets/gesttravauxjava.html" class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🏗️</div>
+                    <span class="project-type type-school">Projet Scolaire</span>
+                </div>
+                <div class="project-title">GestTravaux — Application Desktop</div>
+                <div class="project-date">BTS SIO SLAM · Lycée ORT Daniel Mayer</div>
+                <div class="project-desc">
+                    Application de gestion de chantiers et de travaux. Interface graphique riche développée
+                    avec JavaFX, couplée à un backend REST Spring Boot. Gestion des clients, des chantiers,
+                    des devis et du suivi des interventions.
+                </div>
+                <div class="project-stack">
+                    <span class="stack-pill">Java</span>
+                    <span class="stack-pill">JavaFX</span>
+                    <span class="stack-pill">Spring Boot</span>
+                    <span class="stack-pill">MySQL</span>
+                    <span class="stack-pill">REST API</span>
+                    <span class="stack-pill">UML</span>
+                </div>
+            </a>
+
+            <a href="projets/gesttravauxsymfony.html" class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🌍</div>
+                    <span class="project-type type-school">Projet Scolaire</span>
+                </div>
+                <div class="project-title">GestTravaux Web — Application Symfony</div>
+                <div class="project-date">BTS SIO SLAM · Lycée ORT Daniel Mayer</div>
+                <div class="project-desc">
+                    Version web de l'application GestTravaux, développée avec le framework Symfony.
+                    Gestion des utilisateurs, des rôles et des accès, CRUD complet sur les entités métier,
+                    intégration d'un système d'authentification.
+                </div>
+                <div class="project-stack">
+                    <span class="stack-pill">PHP</span>
+                    <span class="stack-pill">Symfony</span>
+                    <span class="stack-pill">Doctrine</span>
+                    <span class="stack-pill">MySQL</span>
+                    <span class="stack-pill">Twig</span>
+                    <span class="stack-pill">HTML/CSS</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<hr class="section-line" />
+
+<!-- ══════════════════════════════
+     PARCOURS
+══════════════════════════════ -->
+<section id="parcours">
+    <div class="section-inner fade-in">
+        <div class="section-label">Mon parcours</div>
+        <h2 class="section-title">Parcours</h2>
+
+        <div class="parcours-tabs projects-tabs" style="margin-bottom: 2.5rem;">
+            <button class="tab-btn active" onclick="showParcours('tpro')">Expériences professionnelles</button>
+            <button class="tab-btn" onclick="showParcours('tform')">Formation</button>
+        </div>
+
+        <!-- Expériences professionnelles -->
+        <div id="tab-tpro" class="tab-pane active" style="display: block;">
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="tl-date">Janvier — Février 2026</div>
+                    <div class="tl-title">Développeur Backend & Mobile</div>
+                    <div class="tl-company">Gollal · Clichy-sous-Bois, 93390</div>
+                    <div class="tl-desc">
+                        Développement d'une application mobile multiplateforme en Kotlin Multiplatform (KMP).
+                        Conception et modélisation de la base de données et développement du backend.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Mai — Juillet 2025</div>
+                    <div class="tl-title">Développeur Web & React</div>
+                    <div class="tl-company">Gollal · Clichy-sous-Bois, 93390</div>
+                    <div class="tl-desc">
+                        Développement from scratch du site officiel de l'entreprise. Responsive design,
+                        internationalisation (i18next), charte graphique et accessibilité.
+                        Stack : React, TypeScript, Vite, Firebase, GitLab.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Avril 2024</div>
+                    <div class="tl-title">Agent de sécurité — Village Olympique Paris 2024</div>
+                    <div class="tl-company">ESP Sécurité · Saint-Denis, 93200</div>
+                    <div class="tl-desc">
+                        Accueil des athlètes, agent de presse et maintien de la sécurité lors des JO Paris 2024.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Oct. 2023 — Fév. 2024</div>
+                    <div class="tl-title">Employé polyvalent</div>
+                    <div class="tl-company">McDonald's · Chelles, 77500</div>
+                    <div class="tl-desc">
+                        Polyvalence entre différents services : cuisine, caisse, drive et services à table.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Août — Sept. 2023</div>
+                    <div class="tl-title">Service boulangerie</div>
+                    <div class="tl-company">Auchan · Montfermeil, 93390</div>
+                    <div class="tl-desc">
+                        Gestion des baguettes et viennoiseries : étiquetage, respect des délais de cuisson, mise en rayon.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Juillet 2023</div>
+                    <div class="tl-title">Agent polyvalent — Régie bâtiment</div>
+                    <div class="tl-company">Mairie de Montfermeil · Montfermeil, 93390</div>
+                    <div class="tl-desc">
+                        Travaux de maintenance en collaboration avec plusieurs corps de métier
+                        (plombiers, maçons, électriciens, serruriers…).
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Février 2018</div>
+                    <div class="tl-title">Stage découverte informatique</div>
+                    <div class="tl-company">Capgemini · Issy-les-Moulineaux, 92130</div>
+                    <div class="tl-desc">
+                        Découverte des métiers du digital (PO, UI/UX), développement d'une calculatrice Python,
+                        initiation aux méthodes agiles, domotique.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Formation -->
+        <div id="tab-tform" class="tab-pane" style="display: none;">
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="tl-date">2024 — 2026</div>
+                    <div class="tl-title">BTS SIO — option SLAM</div>
+                    <div class="tl-company">Lycée ORT Daniel Mayer · Montreuil</div>
+                    <div class="tl-desc">
+                        Services Informatiques aux Organisations — Solutions Logicielles et Applications Métier.
+                        Projets Java/Spring Boot, Symfony, développement mobile KMP.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">2022 — 2024</div>
+                    <div class="tl-title">Double Licence Mathématiques — Informatique</div>
+                    <div class="tl-company">Université Sorbonne Paris Nord · Villetaneuse</div>
+                    <div class="tl-desc">
+                        Algorithmique, structures de données, programmation C et Java,
+                        bases mathématiques de l'informatique.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">2022</div>
+                    <div class="tl-title">Baccalauréat Maths — Physique</div>
+                    <div class="tl-company">Lycée Albert Schweitzer · Le Raincy</div>
+                    <div class="tl-desc">
+                        Spécialités Mathématiques et Physique-Chimie. Obtention du baccalauréat général.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<hr class="section-line" />
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section id="contact">
+    <div class="section-inner fade-in">
+        <div class="section-label">Restons en contact</div>
+        <h2 class="section-title">Contact</h2>
+
+        <p class="contact-intro">
+            Je suis disponible pour une alternance dès septembre 2026
+            (rythme 1 semaine entreprise / 1 semaine CFA). N'hésitez pas à me contacter !
+        </p>
+
+        <div class="contact-links-grid">
+
+            <a href="mailto:vincentlaine.238@gmail.com" class="contact-link">
+                <div class="contact-link-icon"><img src="images/gmail.png" alt="logo gmail">️</div>
+                <div class="contact-link-info">
+                    <small>Email</small>
+                    <strong>vincentlaine.238@gmail.com</strong>
+                </div>
+            </a>
+
+            <a href="https://github.com/vincent-laine93" target="_blank" rel="noopener" class="contact-link">
+                <div class="contact-link-icon"><img src="images/github.png" alt="logo github"></div>
+                <div class="contact-link-info">
+                    <small>GitHub</small>
+                    <strong>github.com/vincent-laine93</strong>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/vincent-laine-b00381244/" target="_blank" rel="noopener" class="contact-link">
+                <div class="contact-link-icon"><img src="images/linkedin.png" alt="logo linkedin"></div>
+                <div class="contact-link-info">
+                    <small>LinkedIn</small>
+                    <strong>linkedin.com/in/Vincent-Laine</strong>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
+<footer>
+    © 2025 Vincent Lainé — Développeur Web & Logiciel
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

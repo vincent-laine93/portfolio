@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GestTravaux Desktop — Vincent Lainé</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style/index.css" />
+  <link rel="stylesheet" href="../style/projet.css" />
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">Vincent <span>Lainé</span></a>
+</nav>
+
+<!-- HERO -->
+<div class="projet-hero">
+  <div class="projet-hero-inner">
+    <a href="../index.html#projets" class="back-btn">Retour au portfolio</a>
+
+    <div class="projet-badges">
+      <span class="project-type type-school">Projet Scolaire</span>
+      <span class="project-type type-pro" style="background:rgba(43,224,200,0.08);">Java · JavaFX · Spring Boot</span>
+    </div>
+
+    <h1 class="projet-title">GestTravaux<br /><span class="accent">Desktop</span></h1>
+    <p class="projet-subtitle">
+      Application de bureau pour la gestion complète des chantiers immobiliers — pilotage, comparaison de devis et suivi d'avancement.
+    </p>
+
+    <div class="projet-meta">
+      <div class="projet-meta-item">
+        <small>Période</small>
+        <span>Oct. 2025 — Mars 2026</span>
+      </div>
+      <div class="projet-meta-item">
+        <small>Contexte</small>
+        <span>BTS SIO SLAM — Lycée ORT Daniel Mayer</span>
+      </div>
+      <div class="projet-meta-item">
+        <small>Équipe</small>
+        <span>Projet d'équipe (3+ personnes)</span>
+      </div>
+      <div class="projet-meta-item">
+        <small>Rôle</small>
+        <span>Développeur Full Stack Java</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CONTENU -->
+<div class="projet-content">
+
+  <!-- CONTEXTE -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">🏢 Contexte & entreprise</h2>
+    <div class="entreprise-card">
+      <div class="entreprise-icon">🏗️</div>
+      <div class="entreprise-info">
+        <h3>IMMOSYNC — Société de syndic immobilier</h3>
+        <p>
+          IMMOSYNC est une société de syndic proposant des services de gérance de biens immobiliers.
+          Elle assure le maintien en état des biens en faisant réaliser des travaux dans les appartements
+          et parties communes. Le processus de gestion était jusqu'alors entièrement manuel : 3 personnes
+          géraient les chantiers via des échanges dispersés, un archivage papier et un suivi difficile
+          des chantiers multiples. L'objectif du projet était de <strong>digitaliser et moderniser
+          l'ensemble du processus</strong> pour réduire de 40% le temps de traitement des dossiers.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ARCHITECTURE -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">🏛️ Architecture du système</h2>
+    <p style="color:#9aaabb;font-weight:300;margin-bottom:1.5rem;">
+      Le projet repose sur deux applications distinctes partageant une base de données MySQL commune.
+      L'application Java Desktop est dédiée au gestionnaire IMMOSYNC pour le pilotage global des chantiers.
+    </p>
+    <div class="archi-grid">
+      <div class="archi-card">
+        <div class="archi-icon">🖥️</div>
+        <h4>Java Desktop</h4>
+        <p>Interface gestionnaire — pilotage, comparateur de devis, rapports</p>
+      </div>
+      <div class="archi-card">
+        <div class="archi-icon">🌐</div>
+        <h4>Symfony Web</h4>
+        <p>Interface inspecteur, entrepreneur et propriétaire</p>
+      </div>
+      <div class="archi-card">
+        <div class="archi-icon">🗄️</div>
+        <h4>MySQL partagée</h4>
+        <p>Base de données unique accédée par les deux applications</p>
+      </div>
+      <div class="archi-card">
+        <div class="archi-icon">🔗</div>
+        <h4>Hibernate ORM</h4>
+        <p>Persistance des entités Java vers MySQL</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FONCTIONNALITÉS -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">⚙️ Fonctionnalités développées</h2>
+    <div class="fonctionnalites-grid">
+      <div class="fonctionnalite-card">
+        <h4>📋 Gestion des entités métier</h4>
+        <p>CRUD complet sur les entrepreneurs, propriétaires, biens et prestations avec leurs catégories respectives.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>🏗️ Création de chantiers</h4>
+        <p>Création du dossier chantier, établissement du devis type, assignation d'un inspecteur et validation préliminaire.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>📍 Sollicitation des entrepreneurs</h4>
+        <p>Sélection automatique des entrepreneurs qualifiés dans un rayon géographique via algorithmes de calcul de distances.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>⚖️ Comparateur de devis</h4>
+        <p>Comparaison multi-critères pondérés : date de début des travaux et prix. Interface graphique avec jeu de couleurs pour faciliter la décision.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>📊 Suivi d'avancement</h4>
+        <p>Planning Gantt interactif, tableau de bord temps réel avec indicateurs colorés et système d'alertes automatiques.</p>
+      </div>
+      <div class="fonctionnalite-card">
+        <h4>📄 Génération de rapports</h4>
+        <p>Génération automatique de rapports PDF, procès-verbaux, courriers et avenants en fin de chantier.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MON RÔLE -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">👨‍💻 Mon rôle dans le projet</h2>
+    <ul class="role-list">
+      <li>Participation à la conception de la base de données MySQL partagée (schéma normalisé 3FN, contraintes d'intégrité)</li>
+      <li>Développement des interfaces JavaFX selon l'architecture MVC</li>
+      <li>Mise en place de la persistance via Hibernate ORM avec configuration XML et annotations</li>
+      <li>Implémentation des services métier avec gestion des transactions</li>
+      <li>Développement du comparateur de devis avec algorithme de comparaison multi-critères</li>
+      <li>Travail en équipe avec méthode agile, suivi des tâches et versionnement Git</li>
+    </ul>
+  </div>
+
+  <!-- STACK -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">🛠️ Stack technique</h2>
+    <div class="stack-section">
+      <span class="stack-pill">Java</span>
+      <span class="stack-pill">JavaFX</span>
+      <span class="stack-pill">Spring Boot</span>
+      <span class="stack-pill">Hibernate ORM</span>
+      <span class="stack-pill">MySQL</span>
+      <span class="stack-pill">Maven</span>
+      <span class="stack-pill">JUnit</span>
+      <span class="stack-pill">UML</span>
+      <span class="stack-pill">Architecture MVC</span>
+      <span class="stack-pill">Git</span>
+      <span class="stack-pill">IntelliJ IDEA</span>
+    </div>
+  </div>
+
+  <!-- SCREENSHOTS -->
+  <div class="projet-section fade-in">
+    <h2 class="projet-section-title">📸 Captures d'écran</h2>
+    <div class="screenshots-grid">
+      <div class="screenshot-placeholder">
+        <span>🖼️</span>
+        <p>Capture à venir</p>
+      </div>
+      <div class="screenshot-placeholder">
+        <span>🖼️</span>
+        <p>Capture à venir</p>
+      </div>
+      <div class="screenshot-placeholder">
+        <span>🖼️</span>
+        <p>Capture à venir</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2025 Vincent Lainé — Développeur Web & Logiciel</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

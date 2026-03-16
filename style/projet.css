@@ -1,0 +1,284 @@
+/* ═══════════════════════════════════════════
+   VINCENT LAINÉ — Pages détail projet
+   projet.css
+═══════════════════════════════════════════ */
+
+/* ─── BACK BUTTON ─── */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
+    margin-bottom: 2.5rem;
+}
+.back-btn:hover { color: var(--teal); }
+.back-btn::before { content: '←'; font-size: 1rem; }
+
+/* ─── PROJET HERO ─── */
+.projet-hero {
+    padding: 120px 5vw 60px;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid var(--border);
+}
+
+.projet-hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projet-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.projet-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+.projet-title .accent { color: var(--teal); }
+
+.projet-subtitle {
+    font-size: 1.1rem;
+    color: var(--muted);
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 700px;
+}
+
+.projet-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.projet-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.projet-meta-item small {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--teal);
+}
+.projet-meta-item span {
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+/* ─── CONTENU PROJET ─── */
+.projet-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 5vw 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.projet-section {
+    margin-bottom: 4rem;
+}
+
+.projet-section-title {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.projet-section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+}
+
+.projet-section p {
+    color: #9aaabb;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.8;
+    margin-bottom: 0.75rem;
+}
+
+/* ─── CONTEXTE ENTREPRISE ─── */
+.entreprise-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.entreprise-icon {
+    width: 52px; height: 52px;
+    border-radius: 12px;
+    background: var(--teal-dim);
+    border: 1px solid var(--teal-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.entreprise-info h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 0.4rem;
+}
+.entreprise-info p {
+    color: #8fa0b5;
+    font-size: 0.88rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* ─── FONCTIONNALITÉS ─── */
+.fonctionnalites-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.fonctionnalite-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    transition: border-color 0.2s;
+}
+.fonctionnalite-card:hover { border-color: var(--teal-border); }
+
+.fonctionnalite-card h4 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: var(--teal);
+}
+.fonctionnalite-card p {
+    font-size: 0.85rem;
+    color: #8fa0b5;
+    margin: 0;
+    font-weight: 300;
+}
+
+/* ─── ARCHITECTURE ─── */
+.archi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.archi-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    text-align: center;
+}
+
+.archi-card .archi-icon { font-size: 1.8rem; margin-bottom: 0.5rem; }
+.archi-card h4 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--teal);
+    margin-bottom: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.archi-card p {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin: 0;
+    font-weight: 300;
+}
+
+/* ─── STACK PILLS ─── */
+.stack-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ─── MON RÔLE ─── */
+.role-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.role-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 0.92rem;
+    color: #9aaabb;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.role-list li::before {
+    content: '▸';
+    color: var(--teal);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+/* ─── SCREENSHOTS ─── */
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.screenshot-placeholder {
+    background: var(--card);
+    border: 2px dashed var(--border);
+    border-radius: var(--radius);
+    aspect-ratio: 16/10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+.screenshot-placeholder span { font-size: 2rem; }
+
+.screenshot-img {
+    width: 100%;
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    object-fit: cover;
+    aspect-ratio: 16/10;
+    display: block;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 768px) {
+    .projet-hero { padding: 100px 5vw 40px; }
+    .entreprise-card { flex-direction: column; }
+}

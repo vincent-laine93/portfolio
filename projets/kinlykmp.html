@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kinly — Vincent Lainé</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style/index.css" />
+    <link rel="stylesheet" href="../style/projet.css" />
+</head>
+<body>
+
+<nav>
+    <a href="../index.html" class="nav-logo">Vincent <span>Lainé</span></a>
+</nav>
+
+<!-- HERO -->
+<div class="projet-hero">
+    <div class="projet-hero-inner">
+        <a href="../index.html#projets" class="back-btn">Retour au portfolio</a>
+
+        <div class="projet-badges">
+            <span class="project-type type-stage">Stage 2ème année</span>
+            <span class="project-type type-pro" style="background:rgba(43,224,200,0.08);">KMP · Kotlin · Mobile</span>
+        </div>
+
+        <h1 class="projet-title">Application Mobile<br /><span class="accent">Kinly</span></h1>
+        <p class="projet-subtitle">
+            Application mobile multiplateforme Android & iOS de gestion du quotidien familial — organisation, tâches, courses, calendrier et vacances.
+        </p>
+
+        <div class="projet-meta">
+            <div class="projet-meta-item">
+                <small>Période</small>
+                <span>Janvier — Février 2026</span>
+            </div>
+            <div class="projet-meta-item">
+                <small>Entreprise</small>
+                <span>Gollal · Clichy-sous-Bois</span>
+            </div>
+            <div class="projet-meta-item">
+                <small>Type</small>
+                <span>Stage 2ème année BTS SIO</span>
+            </div>
+            <div class="projet-meta-item">
+                <small>Équipe</small>
+                <span>Binôme (dev + UI/UX)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CONTENU -->
+<div class="projet-content">
+
+    <!-- CONTEXTE -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">💡 Contexte du projet</h2>
+        <div class="entreprise-card">
+            <div class="entreprise-icon">🏠</div>
+            <div class="entreprise-info">
+                <h3>Application de gestion de foyer — Gollal</h3>
+                <p>
+                    L'idée de cette application est née d'un constat de manque d'organisation et de communication
+                    au sein d'un foyer : savoir qui fait quoi, quand, ou comment préparer des vacances ensemble.
+                    Le projet a été réalisé en binôme sur 6 semaines de stage : je m'occupais du
+                    <strong>développement</strong> (backend, BDD, logique métier) tandis qu'une collègue
+                    gérait l'<strong>interface utilisateur et le rôle de cliente</strong>. L'application est
+                    destinée à un usage familial dans un premier temps, avec une architecture pensée pour évoluer.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CHOIX TECHNO -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">🤔 Choix technologique — Pourquoi KMP ?</h2>
+        <p style="color:#9aaabb;font-weight:300;margin-bottom:1.5rem;">
+            Avant de démarrer le développement, j'ai rédigé une étude comparative des trois approches
+            de développement mobile pour justifier le choix technique.
+        </p>
+        <div class="archi-grid">
+            <div class="archi-card">
+                <div class="archi-icon">📱</div>
+                <h4>Natif</h4>
+                <p>Meilleures performances mais deux codebases séparées (Kotlin/Swift) — trop coûteux en temps</p>
+            </div>
+            <div class="archi-card">
+                <div class="archi-icon">🌐</div>
+                <h4>Hybride</h4>
+                <p>HTML/CSS/JS dans un conteneur natif — accès limité aux fonctionnalités OS et performances réduites</p>
+            </div>
+            <div class="archi-card">
+                <div class="archi-icon">✅</div>
+                <h4>KMP (choisi)</h4>
+                <p>Code métier unique partagé Android/iOS, performances proches du natif, Kotlin familier (proche de Java)</p>
+            </div>
+            <div class="archi-card">
+                <div class="archi-icon">🔗</div>
+                <h4>Synergie</h4>
+                <p>Frontend et backend peuvent utiliser le même langage Kotlin avec Spring Boot</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FONCTIONNALITÉS -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">⚙️ Fonctionnalités de l'application</h2>
+        <div class="fonctionnalites-grid">
+            <div class="fonctionnalite-card">
+                <h4>👨‍👩‍👧 Gestion du foyer</h4>
+                <p>Création et gestion de foyers (famille, colocation, couple…), invitation de membres, système de rôles admin/membre et gestion des couleurs personnalisées.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>🔐 Authentification</h4>
+                <p>Système de connexion sécurisé par identifiant et mot de passe avec rôles distincts (admin du foyer, membre) et stockage sécurisé des mots de passe.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>📅 Calendrier partagé</h4>
+                <p>Événements partagés entre membres du foyer avec gestion des récurrences (quotidienne, hebdomadaire, mensuelle) et exceptions par occurrence.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>✅ Tâches & routines</h4>
+                <p>Gestion des tâches assignées aux membres, suivi des statuts (ouvert, terminé, annulé) et tâches récurrentes avec occurrences indépendantes.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>🛒 Liste de courses</h4>
+                <p>Listes de courses partagées dans le foyer, ajout d'articles avec quantités, cochage en temps réel avec indication du membre ayant coché.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>✈️ Organisation des vacances</h4>
+                <p>Planification de voyages multi-foyers, gestion des réservations (hôtel, transport, activités), budget partagé et suivi des dépenses par catégorie.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- BDD -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">🗄️ Conception de la base de données</h2>
+        <p style="color:#9aaabb;font-weight:300;margin-bottom:1rem;">
+            J'ai conçu et modélisé la base de données du projet. Le schéma est normalisé et pensé pour être
+            évolutif grâce à une couche générique de ressources partageables.
+        </p>
+        <div class="fonctionnalites-grid">
+            <div class="fonctionnalite-card">
+                <h4>🏠 Socle multi-foyers</h4>
+                <p>Tables users, households et household_memberships avec gestion des rôles et des couleurs personnalisées par membre.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>🔗 Couche ressources générique</h4>
+                <p>Table resources avec système d'ACL (resource_acl) évitant de recoder le partage dans chaque module (calendrier, tâches, documents…).</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>📅 Récurrences avancées</h4>
+                <p>Tables recurrence_rules et recurrence_exceptions pour gérer finement les événements et tâches récurrents avec modifications par occurrence.</p>
+            </div>
+            <div class="fonctionnalite-card">
+                <h4>🏥 Module santé</h4>
+                <p>Gestion unifiée des sujets santé (utilisateurs, enfants, animaux) avec vaccinations, rendez-vous médicaux et visibilité restreinte.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MON RÔLE -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">👨‍💻 Mon rôle dans le projet</h2>
+        <ul class="role-list">
+            <li>Rédaction du cahier des charges technique et de l'étude comparative des technologies mobile</li>
+            <li>Conception et modélisation complète de la base de données (schéma relationnel, contraintes, index)</li>
+            <li>Développement de la logique métier partagée en Kotlin Multiplatform</li>
+            <li>Développement du backend et mise en place de l'architecture de données</li>
+            <li>Mise en place du système d'authentification et de gestion des rôles</li>
+            <li>Collaboration avec la designer UI/UX pour l'intégration des interfaces natives</li>
+        </ul>
+    </div>
+
+    <!-- STACK -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">🛠️ Stack technique</h2>
+        <div class="stack-section">
+            <span class="stack-pill">Kotlin</span>
+            <span class="stack-pill">Kotlin Multiplatform (KMP)</span>
+            <span class="stack-pill">Android</span>
+            <span class="stack-pill">iOS</span>
+            <span class="stack-pill">Backend Kotlin</span>
+            <span class="stack-pill">Conception BDD</span>
+            <span class="stack-pill">UML</span>
+            <span class="stack-pill">Modélisation relationnelle</span>
+            <span class="stack-pill">IntelliJ IDEA</span>
+            <span class="stack-pill">Git</span>
+        </div>
+    </div>
+
+    <!-- SCREENSHOTS -->
+    <div class="projet-section fade-in">
+        <h2 class="projet-section-title">📸 Captures d'écran</h2>
+        <div class="screenshots-grid">
+            <div class="screenshot-placeholder">
+                <span>🖼️</span>
+                <p>Capture à venir</p>
+            </div>
+            <div class="screenshot-placeholder">
+                <span>🖼️</span>
+                <p>Capture à venir</p>
+            </div>
+            <div class="screenshot-placeholder">
+                <span>🖼️</span>
+                <p>Capture à venir</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>© 2025 Vincent Lainé — Développeur Web & Logiciel</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
