@@ -282,3 +282,81 @@
     .projet-hero { padding: 100px 5vw 40px; }
     .entreprise-card { flex-direction: column; }
 }
+
+/* ─── SWOT ─── */
+.swot-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.swot-card {
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    border: 1px solid transparent;
+}
+
+.swot-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+}
+.swot-card ul li {
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding-left: 1rem;
+    position: relative;
+}
+.swot-card ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    font-size: 0.7rem;
+}
+
+.swot-label {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.swot-s {
+    background: rgba(43, 224, 200, 0.07);
+    border-color: rgba(43, 224, 200, 0.25);
+}
+.swot-s .swot-label { color: var(--teal); }
+.swot-s li { color: #9aaabb; }
+.swot-s li::before { color: var(--teal); }
+
+.swot-w {
+    background: rgba(255, 100, 100, 0.07);
+    border-color: rgba(255, 100, 100, 0.25);
+}
+.swot-w .swot-label { color: #ff8080; }
+.swot-w li { color: #9aaabb; }
+.swot-w li::before { color: #ff8080; }
+
+.swot-o {
+    background: rgba(100, 200, 255, 0.07);
+    border-color: rgba(100, 200, 255, 0.25);
+}
+.swot-o .swot-label { color: #80d4ff; }
+.swot-o li { color: #9aaabb; }
+.swot-o li::before { color: #80d4ff; }
+
+.swot-t {
+    background: rgba(255, 180, 50, 0.07);
+    border-color: rgba(255, 180, 50, 0.25);
+}
+.swot-t .swot-label { color: #ffca6e; }
+.swot-t li { color: #9aaabb; }
+.swot-t li::before { color: #ffca6e; }
+
+@media (max-width: 768px) {
+    .swot-grid { grid-template-columns: 1fr; }
+}
