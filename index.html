@@ -18,9 +18,9 @@
     <a href="#accueil" class="nav-logo">Vincent <span>Lainé</span></a>
     <ul class="nav-links">
         <li><a href="#apropos">À propos</a></li>
+        <li><a href="#parcours">Parcours</a></li>
         <li><a href="#competences">Compétences</a></li>
         <li><a href="#projets">Projets</a></li>
-        <li><a href="#parcours">Parcours</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
@@ -72,8 +72,8 @@
                 <p>
                     Je suis <strong>Vincent Lainé</strong>, développeur web et logiciel actuellement en
                     <strong>BTS SIO option SLAM</strong> au Lycée ORT Daniel Mayer à Montreuil.
-                    Après une première année en formation initiale pour consolider mes bases techniques,
-                    je souhaite poursuivre ma deuxième année en <strong>alternance</strong>.
+                    Après deux année en formation initiale pour consolider mes bases techniques,
+                    je souhaite poursuivre mes études dans le développement année en <strong>alternance</strong>.
                 </p>
                 <p>
                     Mon objectif est de me spécialiser en <strong>conception logicielle, architecture
@@ -97,6 +97,135 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<hr class="section-line" />
+
+<!-- ══════════════════════════════
+     PARCOURS
+══════════════════════════════ -->
+<section id="parcours">
+    <div class="section-inner fade-in">
+        <div class="section-label">Mon parcours</div>
+        <h2 class="section-title">Parcours</h2>
+
+        <div class="parcours-tabs projects-tabs" style="margin-bottom: 2.5rem;">
+            <button class="tab-btn active" onclick="showParcours('tpro')">Expériences professionnelles</button>
+            <button class="tab-btn" onclick="showParcours('tform')">Formation</button>
+        </div>
+
+        <!-- Expériences professionnelles -->
+        <div id="tab-tpro" class="tab-pane active" style="display: block;">
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="tl-date">Janvier — Février 2026</div>
+                    <div class="tl-title">Développeur Backend & Mobile</div>
+                    <div class="tl-company">Gollal · Clichy-sous-Bois, 93390</div>
+                    <div class="tl-desc">
+                        Développement d'une application mobile multiplateforme en Kotlin Multiplatform (KMP).
+                        Conception et modélisation de la base de données et développement du backend.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Mai — Juillet 2025</div>
+                    <div class="tl-title">Développeur Web & React</div>
+                    <div class="tl-company">Gollal · Clichy-sous-Bois, 93390</div>
+                    <div class="tl-desc">
+                        Développement from scratch du site officiel de l'entreprise. Responsive design,
+                        internationalisation (i18next), charte graphique et accessibilité.
+                        Stack : React, TypeScript, Vite, Firebase, GitLab.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Avril 2024</div>
+                    <div class="tl-title">Agent de sécurité — Village Olympique Paris 2024</div>
+                    <div class="tl-company">ESP Sécurité · Saint-Denis, 93200</div>
+                    <div class="tl-desc">
+                        Accueil des athlètes, agent de presse et maintien de la sécurité lors des JO Paris 2024.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Oct. 2023 — Fév. 2024</div>
+                    <div class="tl-title">Employé polyvalent</div>
+                    <div class="tl-company">McDonald's · Chelles, 77500</div>
+                    <div class="tl-desc">
+                        Polyvalence entre différents services : cuisine, caisse, drive et services à table.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Août — Sept. 2023</div>
+                    <div class="tl-title">Service boulangerie</div>
+                    <div class="tl-company">Auchan · Montfermeil, 93390</div>
+                    <div class="tl-desc">
+                        Gestion des baguettes et viennoiseries : étiquetage, respect des délais de cuisson, mise en rayon.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Juillet 2023</div>
+                    <div class="tl-title">Agent polyvalent — Régie bâtiment</div>
+                    <div class="tl-company">Mairie de Montfermeil · Montfermeil, 93390</div>
+                    <div class="tl-desc">
+                        Travaux de maintenance en collaboration avec plusieurs corps de métier
+                        (plombiers, maçons, électriciens, serruriers…).
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">Février 2018</div>
+                    <div class="tl-title">Stage découverte informatique</div>
+                    <div class="tl-company">Capgemini · Issy-les-Moulineaux, 92130</div>
+                    <div class="tl-desc">
+                        Découverte des métiers du digital (PO, UI/UX), développement d'une calculatrice Python,
+                        initiation aux méthodes agiles, domotique.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Formation -->
+        <div id="tab-tform" class="tab-pane" style="display: none;">
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="tl-date">2024 — 2026</div>
+                    <div class="tl-title">BTS SIO — option SLAM</div>
+                    <div class="tl-company">Lycée ORT Daniel Mayer · Montreuil</div>
+                    <div class="tl-desc">
+                        Services Informatiques aux Organisations — Solutions Logicielles et Applications Métier.
+                        Projets Java/Spring Boot, Symfony, développement mobile KMP.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">2022 — 2024</div>
+                    <div class="tl-title">Double Licence Mathématiques — Informatique</div>
+                    <div class="tl-company">Université Sorbonne Paris Nord · Villetaneuse</div>
+                    <div class="tl-desc">
+                        Algorithmique, structures de données, programmation C et Java,
+                        bases mathématiques de l'informatique.
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="tl-date">2022</div>
+                    <div class="tl-title">Baccalauréat Maths — Physique</div>
+                    <div class="tl-company">Lycée Albert Schweitzer · Le Raincy</div>
+                    <div class="tl-desc">
+                        Spécialités Mathématiques et Physique-Chimie. Obtention du baccalauréat général.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </section>
 
@@ -331,135 +460,6 @@
 <hr class="section-line" />
 
 <!-- ══════════════════════════════
-     PARCOURS
-══════════════════════════════ -->
-<section id="parcours">
-    <div class="section-inner fade-in">
-        <div class="section-label">Mon parcours</div>
-        <h2 class="section-title">Parcours</h2>
-
-        <div class="parcours-tabs projects-tabs" style="margin-bottom: 2.5rem;">
-            <button class="tab-btn active" onclick="showParcours('tpro')">Expériences professionnelles</button>
-            <button class="tab-btn" onclick="showParcours('tform')">Formation</button>
-        </div>
-
-        <!-- Expériences professionnelles -->
-        <div id="tab-tpro" class="tab-pane active" style="display: block;">
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="tl-date">Janvier — Février 2026</div>
-                    <div class="tl-title">Développeur Backend & Mobile</div>
-                    <div class="tl-company">Gollal · Clichy-sous-Bois, 93390</div>
-                    <div class="tl-desc">
-                        Développement d'une application mobile multiplateforme en Kotlin Multiplatform (KMP).
-                        Conception et modélisation de la base de données et développement du backend.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">Mai — Juillet 2025</div>
-                    <div class="tl-title">Développeur Web & React</div>
-                    <div class="tl-company">Gollal · Clichy-sous-Bois, 93390</div>
-                    <div class="tl-desc">
-                        Développement from scratch du site officiel de l'entreprise. Responsive design,
-                        internationalisation (i18next), charte graphique et accessibilité.
-                        Stack : React, TypeScript, Vite, Firebase, GitLab.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">Avril 2024</div>
-                    <div class="tl-title">Agent de sécurité — Village Olympique Paris 2024</div>
-                    <div class="tl-company">ESP Sécurité · Saint-Denis, 93200</div>
-                    <div class="tl-desc">
-                        Accueil des athlètes, agent de presse et maintien de la sécurité lors des JO Paris 2024.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">Oct. 2023 — Fév. 2024</div>
-                    <div class="tl-title">Employé polyvalent</div>
-                    <div class="tl-company">McDonald's · Chelles, 77500</div>
-                    <div class="tl-desc">
-                        Polyvalence entre différents services : cuisine, caisse, drive et services à table.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">Août — Sept. 2023</div>
-                    <div class="tl-title">Service boulangerie</div>
-                    <div class="tl-company">Auchan · Montfermeil, 93390</div>
-                    <div class="tl-desc">
-                        Gestion des baguettes et viennoiseries : étiquetage, respect des délais de cuisson, mise en rayon.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">Juillet 2023</div>
-                    <div class="tl-title">Agent polyvalent — Régie bâtiment</div>
-                    <div class="tl-company">Mairie de Montfermeil · Montfermeil, 93390</div>
-                    <div class="tl-desc">
-                        Travaux de maintenance en collaboration avec plusieurs corps de métier
-                        (plombiers, maçons, électriciens, serruriers…).
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">Février 2018</div>
-                    <div class="tl-title">Stage découverte informatique</div>
-                    <div class="tl-company">Capgemini · Issy-les-Moulineaux, 92130</div>
-                    <div class="tl-desc">
-                        Découverte des métiers du digital (PO, UI/UX), développement d'une calculatrice Python,
-                        initiation aux méthodes agiles, domotique.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <!-- Formation -->
-        <div id="tab-tform" class="tab-pane" style="display: none;">
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="tl-date">2024 — 2026</div>
-                    <div class="tl-title">BTS SIO — option SLAM</div>
-                    <div class="tl-company">Lycée ORT Daniel Mayer · Montreuil</div>
-                    <div class="tl-desc">
-                        Services Informatiques aux Organisations — Solutions Logicielles et Applications Métier.
-                        Projets Java/Spring Boot, Symfony, développement mobile KMP.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">2022 — 2024</div>
-                    <div class="tl-title">Double Licence Mathématiques — Informatique</div>
-                    <div class="tl-company">Université Sorbonne Paris Nord · Villetaneuse</div>
-                    <div class="tl-desc">
-                        Algorithmique, structures de données, programmation C et Java,
-                        bases mathématiques de l'informatique.
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="tl-date">2022</div>
-                    <div class="tl-title">Baccalauréat Maths — Physique</div>
-                    <div class="tl-company">Lycée Albert Schweitzer · Le Raincy</div>
-                    <div class="tl-desc">
-                        Spécialités Mathématiques et Physique-Chimie. Obtention du baccalauréat général.
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<hr class="section-line" />
-
-<!-- ══════════════════════════════
      CONTACT
 ══════════════════════════════ -->
 <section id="contact">
@@ -506,7 +506,7 @@
      FOOTER
 ══════════════════════════════ -->
 <footer>
-    © 2025 Vincent Lainé — Développeur Web & Logiciel
+    © 2026 Vincent Lainé — Développeur Web & Logiciel
 </footer>
 
 <script src="script.js"></script>

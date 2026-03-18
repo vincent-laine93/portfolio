@@ -52,3 +52,18 @@ const fadeObserver = new IntersectionObserver(
 );
 
 document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
+
+// Lightbox
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox';
+lightbox.innerHTML = '<span class="lightbox-close">✕</span><img src="" alt="" />';
+document.body.appendChild(lightbox);
+
+document.querySelectorAll('.screenshot-img').forEach(img => {
+    img.addEventListener('click', () => {
+        lightbox.querySelector('img').src = img.src;
+        lightbox.classList.add('active');
+    });
+});
+
+lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
